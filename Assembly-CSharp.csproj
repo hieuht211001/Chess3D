@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{04E25211-54EB-17E5-4CF6-0EB741F4CC3B}</ProjectGuid>
+    <ProjectGuid>{EA0B9687-B9B9-0970-9E25-0E1C02D78036}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -66,7 +66,7 @@
     <Compile Include="Assets\Scripts\Pieces\PieceBishop.cs" />
     <Compile Include="Assets\Scripts\ChessRules.cs" />
     <Compile Include="Assets\Scripts\ICommand.cs" />
-    <Compile Include="Assets\Scripts\PlateUI.cs" />
+    <Compile Include="Assets\Scripts\Plate\PlateUI.cs" />
     <Compile Include="Assets\Scripts\Manager\GameManager.cs" />
     <Compile Include="Assets\Scripts\Manager\PlayerManager.cs" />
     <Compile Include="Assets\Scripts\Board\BoardLogic.cs" />
@@ -74,8 +74,8 @@
     <Compile Include="Assets\Scripts\Pieces\PiecePawn.cs" />
     <Compile Include="Assets\Scripts\Util.cs" />
     <Compile Include="Assets\Scripts\Pieces\PieceRook.cs" />
+    <Compile Include="Assets\Scripts\Plate\Plate.cs" />
     <Compile Include="Assets\Scripts\Pieces\IPieces.cs" />
-    <Compile Include="Assets\Scripts\Plate.cs" />
     <Compile Include="Assets\Scripts\Pieces\PieceQueen.cs" />
     <Compile Include="Assets\Scripts\Board\BoardUI.cs" />
     <Compile Include="Assets\Scripts\Enum Defines.cs" />
