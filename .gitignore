@@ -1,0 +1,16 @@
+# Unity generated folders (tạm thời, có thể tái tạo)
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+
+# Build folders
+[Bb]uild/
+[Bb]uilds/
+
+# Crash reports
+sysinfo.txt
+
+# OS generated files
+.DS_Store
+Thumbs.db
+desktop.ini

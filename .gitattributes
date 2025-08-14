@@ -1,2 +1,24 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+# Unity YAML files → dùng merge tool của Unity
+*.prefab text merge=unityyamlmerge eol=lf
+*.unity text merge=unityyamlmerge eol=lf
+*.mat text merge=unityyamlmerge eol=lf
+*.anim text merge=unityyamlmerge eol=lf
+*.controller text merge=unityyamlmerge eol=lf
+*.asset text merge=unityyamlmerge eol=lf
+*.mask text merge=unityyamlmerge eol=lf
+*.physicsMaterial2D text merge=unityyamlmerge eol=lf
+*.physicsMaterial text merge=unityyamlmerge eol=lf
+*.guiskin text merge=unityyamlmerge eol=lf
+
+# C# scripts
+*.cs text diff=csharp
+
+# Binary files
+*.png binary
+*.jpg binary
+*.tga binary
+*.fbx binary
+*.wav binary
+*.mp3 binary
+*.ogg binary
+*.mp4 binary
