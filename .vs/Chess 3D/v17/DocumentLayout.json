@@ -1,58 +1,58 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Unity\\Chess 3D\\",
+  "WorkspaceRootPath": "C:\\Users\\HLC_2021\\Desktop\\Personal Project\\Chess3D\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{04E25211-54EB-17E5-4CF6-0EB741F4CC3B}|Assembly-CSharp.csproj|d:\\unity\\chess 3d\\assets\\scripts\\plate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{04E25211-54EB-17E5-4CF6-0EB741F4CC3B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\plate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EA0B9687-B9B9-0970-9E25-0E1C02D78036}|Assembly-CSharp.csproj|c:\\users\\hlc_2021\\desktop\\personal project\\chess3d\\assets\\scripts\\pieces\\piecerook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA0B9687-B9B9-0970-9E25-0E1C02D78036}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pieces\\piecerook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{04E25211-54EB-17E5-4CF6-0EB741F4CC3B}|Assembly-CSharp.csproj|D:\\Unity\\Chess 3D\\assets\\scripts\\manager\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{04E25211-54EB-17E5-4CF6-0EB741F4CC3B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\manager\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EA0B9687-B9B9-0970-9E25-0E1C02D78036}|Assembly-CSharp.csproj|C:\\Users\\HLC_2021\\Desktop\\Personal Project\\Chess3D\\assets\\scripts\\chessrules.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA0B9687-B9B9-0970-9E25-0E1C02D78036}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\chessrules.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{04E25211-54EB-17E5-4CF6-0EB741F4CC3B}|Assembly-CSharp.csproj|d:\\unity\\chess 3d\\assets\\scripts\\chessrules.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{04E25211-54EB-17E5-4CF6-0EB741F4CC3B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\chessrules.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EA0B9687-B9B9-0970-9E25-0E1C02D78036}|Assembly-CSharp.csproj|c:\\users\\hlc_2021\\desktop\\personal project\\chess3d\\assets\\scripts\\plate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA0B9687-B9B9-0970-9E25-0E1C02D78036}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\plate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{04E25211-54EB-17E5-4CF6-0EB741F4CC3B}|Assembly-CSharp.csproj|d:\\unity\\chess 3d\\assets\\scripts\\pieces\\piecerook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{04E25211-54EB-17E5-4CF6-0EB741F4CC3B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pieces\\piecerook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EA0B9687-B9B9-0970-9E25-0E1C02D78036}|Assembly-CSharp.csproj|C:\\Users\\HLC_2021\\Desktop\\Personal Project\\Chess3D\\assets\\scripts\\pieces\\piecesui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA0B9687-B9B9-0970-9E25-0E1C02D78036}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pieces\\piecesui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{04E25211-54EB-17E5-4CF6-0EB741F4CC3B}|Assembly-CSharp.csproj|d:\\unity\\chess 3d\\assets\\scripts\\pieces\\piecesui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{04E25211-54EB-17E5-4CF6-0EB741F4CC3B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pieces\\piecesui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EA0B9687-B9B9-0970-9E25-0E1C02D78036}|Assembly-CSharp.csproj|C:\\Users\\HLC_2021\\Desktop\\Personal Project\\Chess3D\\assets\\scripts\\plateui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA0B9687-B9B9-0970-9E25-0E1C02D78036}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\plateui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{04E25211-54EB-17E5-4CF6-0EB741F4CC3B}|Assembly-CSharp.csproj|d:\\unity\\chess 3d\\assets\\scripts\\plateui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{04E25211-54EB-17E5-4CF6-0EB741F4CC3B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\plateui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EA0B9687-B9B9-0970-9E25-0E1C02D78036}|Assembly-CSharp.csproj|C:\\Users\\HLC_2021\\Desktop\\Personal Project\\Chess3D\\assets\\scripts\\board\\boardlogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA0B9687-B9B9-0970-9E25-0E1C02D78036}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\board\\boardlogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{04E25211-54EB-17E5-4CF6-0EB741F4CC3B}|Assembly-CSharp.csproj|D:\\Unity\\Chess 3D\\assets\\scripts\\board\\boardlogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{04E25211-54EB-17E5-4CF6-0EB741F4CC3B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\board\\boardlogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EA0B9687-B9B9-0970-9E25-0E1C02D78036}|Assembly-CSharp.csproj|C:\\Users\\HLC_2021\\Desktop\\Personal Project\\Chess3D\\assets\\scripts\\board\\boardui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA0B9687-B9B9-0970-9E25-0E1C02D78036}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\board\\boardui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{04E25211-54EB-17E5-4CF6-0EB741F4CC3B}|Assembly-CSharp.csproj|D:\\Unity\\Chess 3D\\assets\\scripts\\board\\boardui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{04E25211-54EB-17E5-4CF6-0EB741F4CC3B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\board\\boardui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EA0B9687-B9B9-0970-9E25-0E1C02D78036}|Assembly-CSharp.csproj|C:\\Users\\HLC_2021\\Desktop\\Personal Project\\Chess3D\\assets\\scripts\\pieces\\piecepawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA0B9687-B9B9-0970-9E25-0E1C02D78036}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pieces\\piecepawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{04E25211-54EB-17E5-4CF6-0EB741F4CC3B}|Assembly-CSharp.csproj|D:\\Unity\\Chess 3D\\assets\\scripts\\manager\\playermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{04E25211-54EB-17E5-4CF6-0EB741F4CC3B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\manager\\playermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EA0B9687-B9B9-0970-9E25-0E1C02D78036}|Assembly-CSharp.csproj|C:\\Users\\HLC_2021\\Desktop\\Personal Project\\Chess3D\\assets\\scripts\\manager\\playermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA0B9687-B9B9-0970-9E25-0E1C02D78036}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\manager\\playermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{04E25211-54EB-17E5-4CF6-0EB741F4CC3B}|Assembly-CSharp.csproj|D:\\Unity\\Chess 3D\\assets\\scripts\\pieces\\piecepawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{04E25211-54EB-17E5-4CF6-0EB741F4CC3B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pieces\\piecepawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EA0B9687-B9B9-0970-9E25-0E1C02D78036}|Assembly-CSharp.csproj|C:\\Users\\HLC_2021\\Desktop\\Personal Project\\Chess3D\\assets\\scripts\\manager\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA0B9687-B9B9-0970-9E25-0E1C02D78036}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\manager\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{04E25211-54EB-17E5-4CF6-0EB741F4CC3B}|Assembly-CSharp.csproj|D:\\Unity\\Chess 3D\\assets\\scripts\\pieces\\pieceking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{04E25211-54EB-17E5-4CF6-0EB741F4CC3B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pieces\\pieceking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EA0B9687-B9B9-0970-9E25-0E1C02D78036}|Assembly-CSharp.csproj|C:\\Users\\HLC_2021\\Desktop\\Personal Project\\Chess3D\\assets\\scripts\\pieces\\pieceking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA0B9687-B9B9-0970-9E25-0E1C02D78036}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pieces\\pieceking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{04E25211-54EB-17E5-4CF6-0EB741F4CC3B}|Assembly-CSharp.csproj|D:\\Unity\\Chess 3D\\assets\\scripts\\pieces\\piecequeen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{04E25211-54EB-17E5-4CF6-0EB741F4CC3B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pieces\\piecequeen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EA0B9687-B9B9-0970-9E25-0E1C02D78036}|Assembly-CSharp.csproj|C:\\Users\\HLC_2021\\Desktop\\Personal Project\\Chess3D\\assets\\scripts\\pieces\\piecequeen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA0B9687-B9B9-0970-9E25-0E1C02D78036}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pieces\\piecequeen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{04E25211-54EB-17E5-4CF6-0EB741F4CC3B}|Assembly-CSharp.csproj|D:\\Unity\\Chess 3D\\assets\\scripts\\pieces\\piecebishop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{04E25211-54EB-17E5-4CF6-0EB741F4CC3B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pieces\\piecebishop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EA0B9687-B9B9-0970-9E25-0E1C02D78036}|Assembly-CSharp.csproj|C:\\Users\\HLC_2021\\Desktop\\Personal Project\\Chess3D\\assets\\scripts\\pieces\\piecebishop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA0B9687-B9B9-0970-9E25-0E1C02D78036}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pieces\\piecebishop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -66,13 +66,13 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "PieceRook.cs",
-              "DocumentMoniker": "D:\\Unity\\Chess 3D\\Assets\\Scripts\\Pieces\\PieceRook.cs",
+              "DocumentMoniker": "C:\\Users\\HLC_2021\\Desktop\\Personal Project\\Chess3D\\Assets\\Scripts\\Pieces\\PieceRook.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Pieces\\PieceRook.cs",
-              "ToolTip": "D:\\Unity\\Chess 3D\\Assets\\Scripts\\Pieces\\PieceRook.cs",
+              "ToolTip": "C:\\Users\\HLC_2021\\Desktop\\Personal Project\\Chess3D\\Assets\\Scripts\\Pieces\\PieceRook.cs",
               "RelativeToolTip": "Assets\\Scripts\\Pieces\\PieceRook.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAYwCQAAAAAAAAAAAAAAA==",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-13T14:04:38.644Z",
               "EditorCaption": ""
@@ -81,67 +81,64 @@
         },
         {
           "DockedWidth": 418,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "ChessRules.cs",
-              "DocumentMoniker": "D:\\Unity\\Chess 3D\\Assets\\Scripts\\ChessRules.cs",
+              "DocumentMoniker": "C:\\Users\\HLC_2021\\Desktop\\Personal Project\\Chess3D\\Assets\\Scripts\\ChessRules.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ChessRules.cs",
-              "ToolTip": "D:\\Unity\\Chess 3D\\Assets\\Scripts\\ChessRules.cs",
+              "ToolTip": "C:\\Users\\HLC_2021\\Desktop\\Personal Project\\Chess3D\\Assets\\Scripts\\ChessRules.cs",
               "RelativeToolTip": "Assets\\Scripts\\ChessRules.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAEwBEAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-13T16:28:32.75Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-13T16:28:32.75Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Plate.cs",
-              "DocumentMoniker": "D:\\Unity\\Chess 3D\\Assets\\Scripts\\Plate.cs",
+              "DocumentMoniker": "C:\\Users\\HLC_2021\\Desktop\\Personal Project\\Chess3D\\Assets\\Scripts\\Plate.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Plate.cs",
-              "ToolTip": "D:\\Unity\\Chess 3D\\Assets\\Scripts\\Plate.cs",
+              "ToolTip": "C:\\Users\\HLC_2021\\Desktop\\Personal Project\\Chess3D\\Assets\\Scripts\\Plate.cs",
               "RelativeToolTip": "Assets\\Scripts\\Plate.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAuwCUAAAAIAAAAAAAAAA==",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-13T16:24:05.746Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "PiecesUI.cs",
-              "DocumentMoniker": "D:\\Unity\\Chess 3D\\Assets\\Scripts\\Pieces\\PiecesUI.cs",
+              "DocumentMoniker": "C:\\Users\\HLC_2021\\Desktop\\Personal Project\\Chess3D\\Assets\\Scripts\\Pieces\\PiecesUI.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Pieces\\PiecesUI.cs",
-              "ToolTip": "D:\\Unity\\Chess 3D\\Assets\\Scripts\\Pieces\\PiecesUI.cs",
+              "ToolTip": "C:\\Users\\HLC_2021\\Desktop\\Personal Project\\Chess3D\\Assets\\Scripts\\Pieces\\PiecesUI.cs",
               "RelativeToolTip": "Assets\\Scripts\\Pieces\\PiecesUI.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-13T16:11:39.995Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-13T16:11:39.995Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PlateUI.cs",
+              "DocumentMoniker": "C:\\Users\\HLC_2021\\Desktop\\Personal Project\\Chess3D\\Assets\\Scripts\\PlateUI.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlateUI.cs",
+              "ToolTip": "C:\\Users\\HLC_2021\\Desktop\\Personal Project\\Chess3D\\Assets\\Scripts\\PlateUI.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlateUI.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T16:11:17.662Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "PlateUI.cs",
-              "DocumentMoniker": "D:\\Unity\\Chess 3D\\Assets\\Scripts\\PlateUI.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\PlateUI.cs",
-              "ToolTip": "D:\\Unity\\Chess 3D\\Assets\\Scripts\\PlateUI.cs",
-              "RelativeToolTip": "Assets\\Scripts\\PlateUI.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAABNAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-13T16:11:17.662Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
               "Title": "BoardLogic.cs",
-              "DocumentMoniker": "D:\\Unity\\Chess 3D\\Assets\\Scripts\\Board\\BoardLogic.cs",
+              "DocumentMoniker": "C:\\Users\\HLC_2021\\Desktop\\Personal Project\\Chess3D\\Assets\\Scripts\\Board\\BoardLogic.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Board\\BoardLogic.cs",
-              "ToolTip": "D:\\Unity\\Chess 3D\\Assets\\Scripts\\Board\\BoardLogic.cs",
+              "ToolTip": "C:\\Users\\HLC_2021\\Desktop\\Personal Project\\Chess3D\\Assets\\Scripts\\Board\\BoardLogic.cs",
               "RelativeToolTip": "Assets\\Scripts\\Board\\BoardLogic.cs",
               "ViewState": "AgIAAFEAAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -149,11 +146,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "BoardUI.cs",
-              "DocumentMoniker": "D:\\Unity\\Chess 3D\\Assets\\Scripts\\Board\\BoardUI.cs",
+              "DocumentMoniker": "C:\\Users\\HLC_2021\\Desktop\\Personal Project\\Chess3D\\Assets\\Scripts\\Board\\BoardUI.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Board\\BoardUI.cs",
-              "ToolTip": "D:\\Unity\\Chess 3D\\Assets\\Scripts\\Board\\BoardUI.cs",
+              "ToolTip": "C:\\Users\\HLC_2021\\Desktop\\Personal Project\\Chess3D\\Assets\\Scripts\\Board\\BoardUI.cs",
               "RelativeToolTip": "Assets\\Scripts\\Board\\BoardUI.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -161,11 +158,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 7,
               "Title": "PiecePawn.cs",
-              "DocumentMoniker": "D:\\Unity\\Chess 3D\\Assets\\Scripts\\Pieces\\PiecePawn.cs",
+              "DocumentMoniker": "C:\\Users\\HLC_2021\\Desktop\\Personal Project\\Chess3D\\Assets\\Scripts\\Pieces\\PiecePawn.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Pieces\\PiecePawn.cs",
-              "ToolTip": "D:\\Unity\\Chess 3D\\Assets\\Scripts\\Pieces\\PiecePawn.cs",
+              "ToolTip": "C:\\Users\\HLC_2021\\Desktop\\Personal Project\\Chess3D\\Assets\\Scripts\\Pieces\\PiecePawn.cs",
               "RelativeToolTip": "Assets\\Scripts\\Pieces\\PiecePawn.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAAswAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -175,9 +172,9 @@
               "$type": "Document",
               "DocumentIndex": 8,
               "Title": "PlayerManager.cs",
-              "DocumentMoniker": "D:\\Unity\\Chess 3D\\Assets\\Scripts\\Manager\\PlayerManager.cs",
+              "DocumentMoniker": "C:\\Users\\HLC_2021\\Desktop\\Personal Project\\Chess3D\\Assets\\Scripts\\Manager\\PlayerManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Manager\\PlayerManager.cs",
-              "ToolTip": "D:\\Unity\\Chess 3D\\Assets\\Scripts\\Manager\\PlayerManager.cs",
+              "ToolTip": "C:\\Users\\HLC_2021\\Desktop\\Personal Project\\Chess3D\\Assets\\Scripts\\Manager\\PlayerManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\Manager\\PlayerManager.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAAjwBkAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -185,24 +182,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 9,
               "Title": "GameManager.cs",
-              "DocumentMoniker": "D:\\Unity\\Chess 3D\\Assets\\Scripts\\Manager\\GameManager.cs",
+              "DocumentMoniker": "C:\\Users\\HLC_2021\\Desktop\\Personal Project\\Chess3D\\Assets\\Scripts\\Manager\\GameManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Manager\\GameManager.cs",
-              "ToolTip": "D:\\Unity\\Chess 3D\\Assets\\Scripts\\Manager\\GameManager.cs",
+              "ToolTip": "C:\\Users\\HLC_2021\\Desktop\\Personal Project\\Chess3D\\Assets\\Scripts\\Manager\\GameManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\Manager\\GameManager.cs",
               "ViewState": "AgIAADkAAAAAAAAAAAArwEAAAABUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-13T14:42:07.217Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-13T14:42:07.217Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
               "Title": "PieceKing.cs",
-              "DocumentMoniker": "D:\\Unity\\Chess 3D\\Assets\\Scripts\\Pieces\\PieceKing.cs",
+              "DocumentMoniker": "C:\\Users\\HLC_2021\\Desktop\\Personal Project\\Chess3D\\Assets\\Scripts\\Pieces\\PieceKing.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Pieces\\PieceKing.cs",
-              "ToolTip": "D:\\Unity\\Chess 3D\\Assets\\Scripts\\Pieces\\PieceKing.cs",
+              "ToolTip": "C:\\Users\\HLC_2021\\Desktop\\Personal Project\\Chess3D\\Assets\\Scripts\\Pieces\\PieceKing.cs",
               "RelativeToolTip": "Assets\\Scripts\\Pieces\\PieceKing.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAxwCMAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -212,9 +208,9 @@
               "$type": "Document",
               "DocumentIndex": 11,
               "Title": "PieceQueen.cs",
-              "DocumentMoniker": "D:\\Unity\\Chess 3D\\Assets\\Scripts\\Pieces\\PieceQueen.cs",
+              "DocumentMoniker": "C:\\Users\\HLC_2021\\Desktop\\Personal Project\\Chess3D\\Assets\\Scripts\\Pieces\\PieceQueen.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Pieces\\PieceQueen.cs",
-              "ToolTip": "D:\\Unity\\Chess 3D\\Assets\\Scripts\\Pieces\\PieceQueen.cs",
+              "ToolTip": "C:\\Users\\HLC_2021\\Desktop\\Personal Project\\Chess3D\\Assets\\Scripts\\Pieces\\PieceQueen.cs",
               "RelativeToolTip": "Assets\\Scripts\\Pieces\\PieceQueen.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAAswAkAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -224,9 +220,9 @@
               "$type": "Document",
               "DocumentIndex": 12,
               "Title": "PieceBishop.cs",
-              "DocumentMoniker": "D:\\Unity\\Chess 3D\\Assets\\Scripts\\Pieces\\PieceBishop.cs",
+              "DocumentMoniker": "C:\\Users\\HLC_2021\\Desktop\\Personal Project\\Chess3D\\Assets\\Scripts\\Pieces\\PieceBishop.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Pieces\\PieceBishop.cs",
-              "ToolTip": "D:\\Unity\\Chess 3D\\Assets\\Scripts\\Pieces\\PieceBishop.cs",
+              "ToolTip": "C:\\Users\\HLC_2021\\Desktop\\Personal Project\\Chess3D\\Assets\\Scripts\\Pieces\\PieceBishop.cs",
               "RelativeToolTip": "Assets\\Scripts\\Pieces\\PieceBishop.cs",
               "ViewState": "AgIAAAcAAAAAAAAAAAAswBAAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
