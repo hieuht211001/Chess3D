@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
-using static EnumDefines;
+using static GeneralDefine;
+using static OtherDefine;
 
 [CreateAssetMenu(fileName = "PlateUI", menuName = "Scriptable Objects/PlateUI")]
 public class PlateUI : ScriptableObject

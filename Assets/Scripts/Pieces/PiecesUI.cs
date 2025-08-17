@@ -1,6 +1,7 @@
 ﻿using System;
 using UnityEngine;
-using static EnumDefines;
+using static GeneralDefine;
+using static PiecesDefine;
 
 [CreateAssetMenu(fileName = "PieceUI", menuName = "Scriptable Objects/PieceUI")]
 public class PiecesUI : ScriptableObject
@@ -13,14 +14,20 @@ public class PiecesUI : ScriptableObject
     }
 
     [SerializeField] private PieceMaterial[] pieceMaterialArray;
-    public Material GetPieceMaterial(PIECE_MATERIAL teamColor)
+    public Material GetPieceMaterial(PIECE_MATERIAL teamColor, float alpha)
     {
         try
         {
             foreach (var pieceInfo in pieceMaterialArray)
             {
                 if (pieceInfo.name == teamColor)
-                    return pieceInfo.material;
+                {
+                    if (alpha != 1f)
+                    {
+                        return MakeTransparent(pieceInfo.material, alpha);
+                    }
+                    else return pieceInfo.material;
+                }
             }
             return null;
         }
@@ -29,6 +36,28 @@ public class PiecesUI : ScriptableObject
             Debug.LogException(ex);
             return null;
         }
+    }
+
+    public Material MakeTransparent(Material original, float alpha)
+    {
+        if (original == null) return null;
+
+        Material transparentMat = new Material(original);
+
+        transparentMat.SetFloat("_Mode", 3);
+        transparentMat.SetInt("_SrcBlend", (int)UnityEngine.Rendering.BlendMode.SrcAlpha);
+        transparentMat.SetInt("_DstBlend", (int)UnityEngine.Rendering.BlendMode.OneMinusSrcAlpha);
+        transparentMat.SetInt("_ZWrite", 0);
+        transparentMat.DisableKeyword("_ALPHATEST_ON");
+        transparentMat.EnableKeyword("_ALPHABLEND_ON");
+        transparentMat.DisableKeyword("_ALPHAPREMULTIPLY_ON");
+        transparentMat.renderQueue = 3000;
+
+        Color c = transparentMat.color;
+        c.a = alpha;
+        transparentMat.color = c;
+
+        return transparentMat;
     }
 
     [Serializable]

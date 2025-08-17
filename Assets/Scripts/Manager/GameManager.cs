@@ -1,9 +1,11 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using static EnumDefines;
+using static GeneralDefine;
 using static UnityEditor.PlayerSettings;
 using static UnityEngine.Rendering.DebugUI.Table;
+using static PiecesDefine;
+using static OtherDefine;
 
 public class GameManager : MonoBehaviour
 {
@@ -47,13 +49,6 @@ public class GameManager : MonoBehaviour
         chessRules = new ChessRules(boardLogic, player);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (GetSelectedPiece() is IPieces piece) { OnPieceSelected(piece); }
-        else if (GetSelectedPiece() is Plate movePlate) { OnMovePlateSelected(movePlate); }
-    }
-
     private void OnPieceSelected(IPieces piece)
     {
         if (piece == null) return;
@@ -66,6 +61,7 @@ public class GameManager : MonoBehaviour
         legalMoves = temp.legalList;
         illegalMoves = temp.illegalList;
 
+        plate.DestroyAllPlates();
         if (legalMoves != null && legalMoves.Count > 0)
         {
             plate.ShowPlateAt(PLATE_TYPE.LEGAL, legalMoves, piece.GetCurrentPosition());
@@ -78,48 +74,47 @@ public class GameManager : MonoBehaviour
 
     private void OnMovePlateSelected(Plate movePlate)
     {
-        if (movePlate == null) return;
+        if (movePlate == null || movePlate.GetPlateType() == PLATE_TYPE.ILLEGAL) return;
         CoordXY selectedPos = movePlate.GetPos();
         player[(int)TEAM_SIDE.ALLY].MoveSelectedPiece(selectedPos);
-        movePlate.DestroyAllMovePlates();
+        movePlate.DestroyAllPlates();
     }
 
-    private object GetSelectedPiece()
+    public void OnClickEvent(Component component)
     {
-        if (Mouse.current.leftButton.wasPressedThisFrame)
+        if (component is IPieces) OnPieceSelected((IPieces)component);
+        if (component is Plate)  OnMovePlateSelected((Plate)component); 
+    }
+
+    DragPieceCommand dragPieceCmd;
+    public void OnHoldStartEvent(Component component)
+    {
+        if (component is IPieces)
         {
-            Vector2 mousePos = Mouse.current.position.ReadValue();
-            Camera currentCamera = null;
-            foreach (var cam in Camera.allCameras)
-            {
-                if (cam.isActiveAndEnabled && cam.pixelRect.Contains(mousePos))
-                {
-                    currentCamera = cam;
-                    break;
-                }
-            }
-
-            Ray ray = currentCamera.ScreenPointToRay(mousePos);
-            RaycastHit hit;
-
-            if (Physics.Raycast(ray, out hit))
-            {
-                GameObject selectedObject = hit.collider.gameObject;
-                Renderer rend = selectedObject.GetComponent<Renderer>();
-                if (rend != null && selectedObject.tag == TAG.PIECES.ToString())
-                {
-                    GameObject hitObject = hit.collider.gameObject;
-                    IPieces pieceComp = hitObject.GetComponent<IPieces>();
-                    return pieceComp;
-                }
-                else if (rend != null && selectedObject.tag == TAG.MOVE_PLATE.ToString())
-                {
-                    GameObject hitObject = hit.collider.gameObject;
-                    Plate movePlate = hitObject.GetComponent<Plate>();
-                    return movePlate;
-                }
-            }
+            ((IPieces)component).ForceSetPieceHeight(PIECE_LIFT_HEIGHT);
+            OnPieceSelected((IPieces)component);
+            dragPieceCmd = new DragPieceCommand((IPieces)component);
         }
-        return null;
+    }
+
+    public void OnHoldDragEvent(Component component, Vector2 position)
+    {
+        if (component is IPieces)
+        {
+            dragPieceCmd.Execute(position);
+        }
+    }
+
+    public void OnHoldEndEvent(Component component, Vector2 position)
+    {
+        if (component is IPieces)
+        {
+            dragPieceCmd.SetUndoRequested();
+            Plate selectedPlate = ((IPieces)component).GetTriggeredPlate();
+            if (selectedPlate != null 
+                && selectedPlate.GetPlateType() == PLATE_TYPE.LEGAL 
+                && !selectedPlate.GetPos().IsEqual(((IPieces)component).GetCurrentPosition())) OnMovePlateSelected(selectedPlate);
+            else dragPieceCmd.Undo();
+        }
     }
 }

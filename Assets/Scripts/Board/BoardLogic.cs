@@ -4,7 +4,7 @@ using System.Drawing;
 using UnityEngine;
 using UnityEngine.ProBuilder.Shapes;
 using UnityEngine.UIElements;
-using static EnumDefines;
+using static GeneralDefine;
 
 public class BoardLogic : MonoBehaviour
 {

@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   platePrefabs:
   - plateObject: {fileID: 3272203495436861465, guid: d5cf35199d36f44459761a66e860e893, type: 3}
-    type: 1
+    type: 2
   - plateObject: {fileID: 4708838122302131404, guid: ae14724e540e4f04ea0b048d20f3fd5c, type: 3}
-    type: 0
+    type: 1

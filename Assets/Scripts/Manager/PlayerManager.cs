@@ -1,7 +1,8 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.ProBuilder.Shapes;
-using static EnumDefines;
+using static GeneralDefine;
+using static PiecesDefine;
 
 public class PlayerManager : MonoBehaviour
 {

@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.ProBuilder.Shapes;
-using static EnumDefines;
+using static GeneralDefine;
 
 public interface ICommand
 {
@@ -82,11 +82,43 @@ public class SimulateCommand : ICommand
 
     public void Execute()
     {
-        targetPiece.ForceSetPiecePos(destCoord);
+        targetPiece.ForceSimulatePieceCoord(destCoord);
     }
+
+    public void Undo()
+    {
+        targetPiece.ForceSimulatePieceCoord(originCoord);
+    }
+}
+
+public class DragPieceCommand : ICommand
+{
+    private IPieces targetPiece;
+    private CoordXY originCoord;
+    private Vector2 dragPos;
+    private bool isUndoRequested;
+    public DragPieceCommand(IPieces targetPiece)
+    {
+        this.isUndoRequested = false;
+        this.targetPiece = targetPiece;
+        this.originCoord = targetPiece.GetCurrentPosition();
+    }
+
+    public void Execute(Vector2 dragPos)
+    {
+        if (isUndoRequested) return;
+        if (this.dragPos.Equals(dragPos)) return;
+        this.dragPos = dragPos;
+        targetPiece.ForceSetPiecePos(dragPos);
+    }
+
+    public void Execute() { }
 
     public void Undo()
     {
         targetPiece.ForceSetPiecePos(originCoord);
     }
+
+    public void SetUndoRequested() => isUndoRequested = true;
 }
+

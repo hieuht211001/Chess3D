@@ -1,6 +1,6 @@
 using UnityEngine;
 using UnityEngine.UIElements;
-using static EnumDefines;
+using static GeneralDefine;
 
 public class Util
 {
@@ -38,5 +38,18 @@ public class Util
     {
         if (side == TEAM_SIDE.ALLY) return 1;
         else return -1;
+    }
+
+    public static Component GetComponent(GameObject obj)
+    {
+        if (obj == null) return null;
+
+        var piece = obj.GetComponent<IPieces>();
+        if (piece != null) return piece;
+
+        var plate = obj.GetComponent<Plate>();
+        if (plate != null) return plate;
+
+        return null;
     }
 }

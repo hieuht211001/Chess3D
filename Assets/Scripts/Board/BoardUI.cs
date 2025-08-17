@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.UIElements;
-using static EnumDefines;
+using static GeneralDefine;
 using static UnityEditor.PlayerSettings;
 
 public class BoardUI : MonoBehaviour

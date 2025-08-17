@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
-using static EnumDefines;
+using static GeneralDefine;
 
 public class PieceBishop : IPieces
 {
