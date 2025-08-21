@@ -1,9 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using Unity.Mathematics.Geometry;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.ProBuilder.Shapes;
 using UnityEngine.UIElements;
 using static GeneralDefine;
+using static OtherDefine;
 using static PiecesDefine;
 
 public class ChessRules
@@ -16,6 +20,159 @@ public class ChessRules
         this.boardLogic = boardLogic;
     }
 
+    #region CASTLE_FUNCTION
+    public bool IsAbleToCastle(TEAM_SIDE teamSide)
+    {
+        IPieces pieceKing = GetKingAndRooksCanCastle(teamSide).pieceKing;
+        List<IPieces> pieceRooks = GetKingAndRooksCanCastle(teamSide).pieceRooks;
+        if (pieceKing == null || pieceRooks == null || pieceRooks.Count <= 0) return false;
+        return true;
+    }
+
+    public ((IPieces pieceKing, CoordXY castleKingPos) kingData, (IPieces pieceRook, CoordXY castleRookPos) rookData) 
+        GetMoveCastlePieceBySelectedPlate(TEAM_SIDE teamSide, CoordXY selectedPlateCoord)
+    {
+        try
+        {
+            var castlePosPairs = GetCastlePosPair(teamSide);
+            var castleKingPairs = castlePosPairs.pieceKing;
+            var castleRookPairs = castlePosPairs.pieceRook;
+
+            if (castleKingPairs == null || castleRookPairs == null)
+                return ((null, null), (null, null));
+
+            var kingAndRooks = GetKingAndRooksCanCastle(teamSide);
+            IPieces pieceKing = kingAndRooks.pieceKing;
+            List<IPieces> pieceRooks = kingAndRooks.pieceRooks;
+
+            for (int i = 0; i < pieceRooks.Count; i++)
+            {
+                CastlePosPair kingPair = castleKingPairs[i];
+                CastlePosPair rookPair = castleRookPairs[i];
+
+                if (selectedPlateCoord.IsEqual(kingPair.castlePos))
+                {
+                    return ((pieceKing, kingPair.castlePos), (pieceRooks[i], rookPair.castlePos));
+                }
+            }
+
+            return ((null, null), (null, null));
+        }
+        catch (Exception ex)
+        {
+            return ((null, null), (null, null));
+        }
+    }
+
+
+    public (List<CastlePosPair> pieceKing, List<CastlePosPair> pieceRook) GetCastlePosPair(TEAM_SIDE teamSide)
+    {
+        try
+        {
+            List<CastlePosPair> castlePosPairKing = new List<CastlePosPair>();
+            List<CastlePosPair> castlePosPairRook = new List<CastlePosPair>();
+            IPieces pieceKing = GetKingAndRooksCanCastle(teamSide).pieceKing;
+            List<IPieces> pieceRooks = GetKingAndRooksCanCastle(teamSide).pieceRooks;
+            if (pieceKing == null || pieceRooks == null || pieceRooks.Count <= 0) return (null, null);
+
+            foreach (IPieces pieceRook in pieceRooks)
+            {
+                CoordXY castlePosKing = GetCastlePosition(pieceKing, pieceRook).newKingPos;
+                CoordXY castlePosRook = GetCastlePosition(pieceKing, pieceRook).newRookPos;
+                castlePosPairRook.Add(new CastlePosPair(pieceRook.GetCurrentPosition(), castlePosRook));
+                castlePosPairKing.Add(new CastlePosPair(pieceKing.GetCurrentPosition(), castlePosKing));
+            }
+            return (castlePosPairKing, castlePosPairRook);
+        }
+        catch (Exception ex)
+        {
+            return (null, null);
+        }
+    }
+
+    private (IPieces pieceKing, List<IPieces> pieceRooks) GetKingAndRooksCanCastle(TEAM_SIDE teamSide)
+    {
+        var pieces = playerManager[(int)teamSide].GetPieceList();
+        var king = pieces.FirstOrDefault(p => p.pieceType == PIECE_TYPE.KING);
+        var rooks = pieces.Where(p => p.pieceType == PIECE_TYPE.ROOK).ToList();
+        List<IPieces> pieceRookList = new List<IPieces>(); 
+
+        if (king == null || rooks.Count == 0) return (king, pieceRookList);
+
+        if (king.hasMoved || IsKingInCheck(teamSide)) return (king, pieceRookList);
+
+        foreach (var rook in rooks)
+        {
+            if (rook.hasMoved) continue;
+            if (IsAnyPiecesBetween(king, rook)) continue;
+
+            var kingPath = GetKingPathForCastle(king, rook);
+            var legalPath = FilterIllegalMoves(king, kingPath).legalList;
+
+            if (kingPath.Count == legalPath.Count) pieceRookList.Add(rook);
+        }
+
+        return (king, pieceRookList);
+    }
+
+
+    private (CoordXY newKingPos, CoordXY newRookPos) GetCastlePosition(IPieces king, IPieces rook)
+    {
+        var kingPos = king.GetCurrentPosition();
+        var rookPos = rook.GetCurrentPosition();
+
+        bool isKingSideCastle = rook.GetCurrentPosition().x > king.GetCurrentPosition().x;
+        int kingMoveDir = isKingSideCastle ? 1 : -1;
+        CoordXY newKingPos = new CoordXY(kingPos.x + 2 * kingMoveDir, kingPos.y);
+        CoordXY newRookPos = new CoordXY(newKingPos.x - 1 * kingMoveDir, kingPos.y);
+
+        return (newKingPos, newRookPos);
+    }
+
+    private List<CoordXY> GetKingPathForCastle(IPieces king, IPieces rook)
+    {
+        bool isKingSideCastle = rook.GetCurrentPosition().x > king.GetCurrentPosition().x;
+        var kingPos = king.GetCurrentPosition();
+
+        List<CoordXY> path = new List<CoordXY>();
+        int kingMoveDir = isKingSideCastle ? 1 : -1;
+        path.Add(new CoordXY(kingPos.x + 1 * kingMoveDir, kingPos.y));
+        path.Add(new CoordXY(kingPos.x + 2 * kingMoveDir, kingPos.y));
+        return path;
+    }
+
+    private bool IsAnyPiecesBetween(IPieces piece1, IPieces piece2)
+    {
+        CoordXY pos1 = piece1.GetCurrentPosition();
+        CoordXY pos2 = piece2.GetCurrentPosition();
+
+        if (pos1.x == pos2.x)
+        {
+            int minY = Mathf.Min((int)pos1.y, (int)pos2.y);
+            int maxY = Mathf.Max((int)pos1.y, (int)pos2.y);
+
+            for (int y = minY + 1; y < maxY; y++)
+            {
+                CoordXY coord = new CoordXY(pos1.x, (COORD_Y)y);
+                if (piece1.IsAnyAllyPiecesAt(coord) || piece1.IsAnyEnemyPiecesAt(coord)) return true;
+            }
+        }
+        else if (pos1.y == pos2.y)
+        {
+            int minX = Mathf.Min((int)pos1.x, (int)pos2.x);
+            int maxX = Mathf.Max((int)pos1.x, (int)pos2.x);
+
+            for (int x = minX + 1; x < maxX; x++)
+            {
+                CoordXY coord = new CoordXY((COORD_X)x, pos1.y);
+                if (piece1.IsAnyAllyPiecesAt(coord) || piece1.IsAnyEnemyPiecesAt(coord)) return true;
+            }
+        }
+        return false;
+    }
+    #endregion
+
+    #region FILTER_CHECKMATE
     public (List<CoordXY> legalList, List<CoordXY> illegalList) FilterIllegalMoves(IPieces piece, List<CoordXY> posList)
     {
         TEAM_SIDE teamSide = piece.teamSide;
@@ -74,7 +231,7 @@ public class ChessRules
                             return piece;
                         if ((dx != 0 && dy != 0) && (piece.pieceType == PIECE_TYPE.BISHOP || piece.pieceType == PIECE_TYPE.QUEEN))
                             return piece;
-                        if (Math.Abs(scanX - kingX) <= 1 && Math.Abs(scanY - kingY) <= 1 && piece.pieceType == PIECE_TYPE.KING)
+                        if (System.Math.Abs(scanX - kingX) <= 1 && System.Math.Abs(scanY - kingY) <= 1 && piece.pieceType == PIECE_TYPE.KING)
                             return piece;
                     }
                     break;
@@ -133,5 +290,5 @@ public class ChessRules
         }
         return null;
     }
-
+    #endregion
 }

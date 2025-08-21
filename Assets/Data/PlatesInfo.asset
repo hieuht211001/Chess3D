@@ -17,3 +17,5 @@ MonoBehaviour:
     type: 2
   - plateObject: {fileID: 4708838122302131404, guid: ae14724e540e4f04ea0b048d20f3fd5c, type: 3}
     type: 1
+  - plateObject: {fileID: 2975068295178950249, guid: 4233e935179538d4eafcee3e033a5e5a, type: 3}
+    type: 3

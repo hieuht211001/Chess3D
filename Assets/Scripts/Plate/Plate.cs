@@ -86,11 +86,11 @@ public class Plate : MonoBehaviour
             rb.collisionDetectionMode = CollisionDetectionMode.ContinuousDynamic;
 
             MouseAction mouseAction = gameObject.AddComponent<MouseAction>();
-            GameManager pieces = FindAnyObjectByType<GameManager>();
-            mouseAction.OnClick += pieces.OnClickEvent;
-            mouseAction.OnHoldStart += pieces.OnHoldStartEvent;
-            mouseAction.OnHoldDrag += pieces.OnHoldDragEvent;
-            mouseAction.OnHoldEnd += pieces.OnHoldEndEvent;
+            GameManager gm = GameManager.Instance;
+            mouseAction.OnClick += gm.OnClickEvent;
+            mouseAction.OnHoldStart += gm.OnHoldStartEvent;
+            mouseAction.OnHoldDrag += gm.OnHoldDragEvent;
+            mouseAction.OnHoldEnd += gm.OnHoldEndEvent;
 
             gameObject.SetActive(true);
         }

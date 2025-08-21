@@ -69,6 +69,37 @@ public class MoveCommand : ICommand
     }
 }
 
+public class CastleCommand : ICommand
+{
+    private IPieces kingPiece;
+    private IPieces rookPiece;
+    private CoordXY kingOriginCoord, kingCastleCoord;
+    private CoordXY rookOriginCoord, rookCastleCoord;
+    private BoardLogic boardGrid;
+    public CastleCommand(BoardLogic board, IPieces kingPiece, IPieces rookPiece, CoordXY kingCastleCoord, CoordXY rookCastleCoord)
+    {
+        this.boardGrid = board;
+        this.kingPiece = kingPiece;
+        this.kingOriginCoord = kingPiece.GetCurrentPosition();
+        this.rookPiece = rookPiece;
+        this.rookOriginCoord = rookPiece.GetCurrentPosition();
+        this.kingCastleCoord = kingCastleCoord;
+        this.rookCastleCoord = rookCastleCoord;
+    }
+
+    public void Execute()
+    {
+        kingPiece.MoveToWithLift(kingCastleCoord);
+        rookPiece.MoveToWithLift(rookCastleCoord);
+    }
+
+    public void Undo()
+    {
+        kingPiece.MoveToWithLift(kingOriginCoord);
+        rookPiece.MoveToWithLift(rookOriginCoord);
+    }
+}
+
 public class SimulateCommand : ICommand
 {
     private IPieces targetPiece;
@@ -96,17 +127,14 @@ public class DragPieceCommand : ICommand
     private IPieces targetPiece;
     private CoordXY originCoord;
     private Vector2 dragPos;
-    private bool isUndoRequested;
     public DragPieceCommand(IPieces targetPiece)
     {
-        this.isUndoRequested = false;
         this.targetPiece = targetPiece;
         this.originCoord = targetPiece.GetCurrentPosition();
     }
 
     public void Execute(Vector2 dragPos)
     {
-        if (isUndoRequested) return;
         if (this.dragPos.Equals(dragPos)) return;
         this.dragPos = dragPos;
         targetPiece.ForceSetPiecePos(dragPos);
@@ -118,7 +146,5 @@ public class DragPieceCommand : ICommand
     {
         targetPiece.ForceSetPiecePos(originCoord);
     }
-
-    public void SetUndoRequested() => isUndoRequested = true;
 }
 

@@ -54,7 +54,7 @@ public class MouseAction : MonoBehaviour
 
     private Vector3 GetMouseWorldPosition(float fixedY = 0f)
     {
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        Ray ray = CameraSwitcher.Instance.GetCurrentCamera().ScreenPointToRay(Input.mousePosition);
         Plane plane = new Plane(Vector3.up, new Vector3(0, fixedY, 0));
         if (plane.Raycast(ray, out float enter))
         {

@@ -1,5 +1,19 @@
 {
   "dependencies": {
+    "com.jg.fullscreengameview": {
+      "version": "https://github.com/JorGra/JG-UnityEditor-GameViewFullscreen.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "bae6389e7210f299e888d096610c8da850335ca5"
+    },
+    "com.nobi.roundedcorners": {
+      "version": "https://github.com/kirevdokimov/Unity-UI-Rounded-Corners.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "33135342e868201eb0d4cef821ecab90caca373e"
+    },
     "com.unity.ai.navigation": {
       "version": "2.0.8",
       "depth": 0,

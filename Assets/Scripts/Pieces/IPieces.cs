@@ -22,6 +22,8 @@ public abstract class IPieces : MonoBehaviour
     private Rigidbody rb;
     private Plate triggeredPlate;
     private Vector3 finalPos;
+    public bool isSelected;
+    public bool hasMoved;
     [SerializeField] public PiecesUI pieceObjectRef;
     #endregion
 
@@ -32,8 +34,8 @@ public abstract class IPieces : MonoBehaviour
         this.teamSide = teamSide;
         this.pieceType = pieceType;
         this.currentPos = position;
-        Vector2 pos = Util.ConvertCoordToWorldVector(position);
-        MoveToWithLift(position);
+        this.isSelected = true;
+        ForceSetPiecePos(this.currentPos);
         this.tag = TAG.PIECES.ToString();
         this.gameObject.layer = LayerMask.NameToLayer(LAYER.PIECES.ToString());
         SetUpColliderNRigidBody();
@@ -57,11 +59,11 @@ public abstract class IPieces : MonoBehaviour
         triggerCollider.isTrigger = true;
 
         MouseAction mouseAction = gameObject.AddComponent<MouseAction>();
-        GameManager pieces = FindAnyObjectByType<GameManager>();
-        mouseAction.OnClick += pieces.OnClickEvent;
-        mouseAction.OnHoldStart += pieces.OnHoldStartEvent;
-        mouseAction.OnHoldDrag += pieces.OnHoldDragEvent;
-        mouseAction.OnHoldEnd += pieces.OnHoldEndEvent;
+        GameManager gm = GameManager.Instance;
+        mouseAction.OnClick += gm.OnClickEvent;
+        mouseAction.OnHoldStart += gm.OnHoldStartEvent;
+        mouseAction.OnHoldDrag += gm.OnHoldDragEvent;
+        mouseAction.OnHoldEnd += gm.OnHoldEndEvent;
     }
 
     public void AssignRefIntance(BoardLogic boardLogic)
@@ -78,7 +80,7 @@ public abstract class IPieces : MonoBehaviour
         else if (other.gameObject.CompareTag(TAG.PIECES.ToString()) && other.transform.root != transform.root)
         {
             IPieces otherPiece = other.gameObject.GetComponent<IPieces>();
-            otherPiece.SetMaterial(0.2f);
+            if (!otherPiece.isSelected) otherPiece.SetMaterial(0.5f);
         }
     }
 
@@ -92,7 +94,8 @@ public abstract class IPieces : MonoBehaviour
         if (other.gameObject.CompareTag(TAG.MOVE_PLATE.ToString())) this.triggeredPlate = null;
         else if (other.gameObject.CompareTag(TAG.PIECES.ToString()) && other.transform.root != transform.root)
         {
-            (other.gameObject.GetComponent<IPieces>()).SetMaterial(1f);
+            IPieces otherPiece = other.gameObject.GetComponent<IPieces>();
+            if (!otherPiece.isSelected) otherPiece.SetMaterial(1f);
         }
     }
 
@@ -138,6 +141,7 @@ public abstract class IPieces : MonoBehaviour
 
     public void MoveToWithLift(CoordXY pos)
     {
+        hasMoved = true;
         this.currentPos = pos;
         Vector2 vectorPos = Util.ConvertCoordToWorldVector(pos);
         StartCoroutine(MoveRoutine(new Vector3(vectorPos.x, 0, vectorPos.y)));

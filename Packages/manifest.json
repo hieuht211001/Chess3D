@@ -1,5 +1,7 @@
 {
   "dependencies": {
+    "com.jg.fullscreengameview": "https://github.com/JorGra/JG-UnityEditor-GameViewFullscreen.git",
+    "com.nobi.roundedcorners": "https://github.com/kirevdokimov/Unity-UI-Rounded-Corners.git",
     "com.unity.ai.navigation": "2.0.8",
     "com.unity.cloud.gltfast": "6.13.1",
     "com.unity.collab-proxy": "2.8.2",

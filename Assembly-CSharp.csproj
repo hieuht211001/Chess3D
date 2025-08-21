@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{EA0B9687-B9B9-0970-9E25-0E1C02D78036}</ProjectGuid>
+    <ProjectGuid>{04E25211-54EB-17E5-4CF6-0EB741F4CC3B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -69,19 +69,24 @@
     <Compile Include="Assets\Scripts\ChessRules.cs" />
     <Compile Include="Assets\Scripts\ICommand.cs" />
     <Compile Include="Assets\Scripts\Plate\PlateUI.cs" />
+    <Compile Include="Assets\Scripts\CanvasUIManager.cs" />
     <Compile Include="Assets\Scripts\Manager\GameManager.cs" />
     <Compile Include="Assets\Scripts\Manager\PlayerManager.cs" />
     <Compile Include="Assets\Scripts\Board\BoardLogic.cs" />
+    <Compile Include="Assets\Scripts\CameraSwitcher.cs" />
     <Compile Include="Assets\Scripts\Pieces\PieceKing.cs" />
     <Compile Include="Assets\Scripts\Pieces\PiecePawn.cs" />
     <Compile Include="Assets\Scripts\Util.cs" />
     <Compile Include="Assets\Scripts\Pieces\PieceRook.cs" />
     <Compile Include="Assets\Scripts\Plate\Plate.cs" />
+    <Compile Include="Assets\Scripts\Manager\TurnManager.cs" />
+    <Compile Include="Assets\Scripts\TurnTimer.cs" />
     <Compile Include="Assets\Scripts\Pieces\IPieces.cs" />
     <Compile Include="Assets\Scripts\Pieces\PieceQueen.cs" />
     <Compile Include="Assets\Scripts\Defines\GeneralDefine.cs" />
     <Compile Include="Assets\Scripts\Board\BoardUI.cs" />
     <Compile Include="Assets\Scripts\Defines\OtherDefine.cs" />
+    <Compile Include="Assets\Scripts\ProgressBarShrink.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -588,6 +593,10 @@
     </Reference>
     <Reference Include="Mono.Cecil">
       <HintPath>Library\PackageCache\com.unity.nuget.mono-cecil@d6f9955a5d5f\Mono.Cecil.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="0Harmony">
+      <HintPath>Library\PackageCache\com.jg.fullscreengameview@bae6389e7210\Plugins\Harmony\net48\0Harmony.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="netstandard">
@@ -1162,6 +1171,10 @@
       <HintPath>Library\ScriptAssemblies\Unity.Collections.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Nobi.UiRoundedCorners.Editor">
+      <HintPath>Library\ScriptAssemblies\Nobi.UiRoundedCorners.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="PPv2URPConverters">
       <HintPath>Library\ScriptAssemblies\PPv2URPConverters.dll</HintPath>
       <Private>False</Private>
@@ -1252,6 +1265,10 @@
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Runtime">
       <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Nobi.UiRoundedCorners">
+      <HintPath>Library\ScriptAssemblies\Nobi.UiRoundedCorners.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.ProBuilder">

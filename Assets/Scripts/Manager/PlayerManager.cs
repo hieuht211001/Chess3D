@@ -11,7 +11,7 @@ public class PlayerManager : MonoBehaviour
     private BoardLogic boardLogic;
     private List<IPieces> pieceList;
     private PiecesUI pieceUI;
-    private IPieces selectedPiece;
+    public IPieces selectedPiece;
 
     public void Init(TEAM_SIDE teamSide, BoardLogic board, PiecesUI pieceUI)
     {
@@ -24,8 +24,15 @@ public class PlayerManager : MonoBehaviour
         AssignRefInstance();
     }
     public List<IPieces> GetPieceList() => this.pieceList;
-    public IPieces GetIPiecesRef() => this.selectedPiece;
-    public void SetSelectPiece(IPieces piece) => selectedPiece = piece;
+    public void SetSelectPiece(IPieces piece)
+    {
+        this.selectedPiece = piece;
+        foreach (IPieces pieceComponenent in pieceList)
+        {
+            pieceComponenent.isSelected = false;
+        }
+        this.selectedPiece.isSelected = true;
+    }
     private void AssignRefInstance()
     {
         foreach (IPieces piece in pieceList)
@@ -67,10 +74,16 @@ public class PlayerManager : MonoBehaviour
 
     public void MoveSelectedPiece(CoordXY newPos)
     {
-        if (!selectedPiece.IsCoordInPossiblePosList(newPos)) return;
-        CoordXY oldPos = selectedPiece.GetCurrentPosition();
+        if (this.selectedPiece == null) return;
+        if (!this.selectedPiece.IsCoordInPossiblePosList(newPos)) return;
         var moveCommand = new MoveCommand(this.boardLogic, selectedPiece, newPos);
         commandManager.ExecuteCommand(moveCommand);
+    }
+
+    public void MoveCastle(IPieces pieceKing, IPieces pieceRook, CoordXY kingCastlePos, CoordXY rookCastlePos)
+    {
+        var castleCommand = new CastleCommand(this.boardLogic, pieceKing, pieceRook, kingCastlePos, rookCastlePos);
+        commandManager.ExecuteCommand(castleCommand);
     }
 
 
