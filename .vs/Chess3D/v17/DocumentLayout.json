@@ -3,44 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\HLC_2021\\Desktop\\Personal Project\\Chess3D\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EA0B9687-B9B9-0970-9E25-0E1C02D78036}|Assembly-CSharp.csproj|c:\\users\\hlc_2021\\desktop\\personal project\\chess3d\\assets\\scripts\\pieces\\ipieces.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA0B9687-B9B9-0970-9E25-0E1C02D78036}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pieces\\ipieces.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EA0B9687-B9B9-0970-9E25-0E1C02D78036}|Assembly-CSharp.csproj|C:\\Users\\HLC_2021\\Desktop\\Personal Project\\Chess3D\\assets\\scripts\\icommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA0B9687-B9B9-0970-9E25-0E1C02D78036}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\icommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EA0B9687-B9B9-0970-9E25-0E1C02D78036}|Assembly-CSharp.csproj|C:\\Users\\HLC_2021\\Desktop\\Personal Project\\Chess3D\\assets\\scripts\\pieces\\piecesui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA0B9687-B9B9-0970-9E25-0E1C02D78036}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pieces\\piecesui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA0B9687-B9B9-0970-9E25-0E1C02D78036}|Assembly-CSharp.csproj|C:\\Users\\HLC_2021\\Desktop\\Personal Project\\Chess3D\\assets\\scripts\\chessrules.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA0B9687-B9B9-0970-9E25-0E1C02D78036}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\chessrules.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA0B9687-B9B9-0970-9E25-0E1C02D78036}|Assembly-CSharp.csproj|C:\\Users\\HLC_2021\\Desktop\\Personal Project\\Chess3D\\assets\\scripts\\manager\\playermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{EA0B9687-B9B9-0970-9E25-0E1C02D78036}|Assembly-CSharp.csproj|c:\\users\\hlc_2021\\desktop\\personal project\\chess3d\\assets\\scripts\\manager\\playermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EA0B9687-B9B9-0970-9E25-0E1C02D78036}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\manager\\playermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA0B9687-B9B9-0970-9E25-0E1C02D78036}|Assembly-CSharp.csproj|C:\\Users\\HLC_2021\\Desktop\\Personal Project\\Chess3D\\assets\\scripts\\plate\\plate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA0B9687-B9B9-0970-9E25-0E1C02D78036}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\plate\\plate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EA0B9687-B9B9-0970-9E25-0E1C02D78036}|Assembly-CSharp.csproj|C:\\Users\\HLC_2021\\Desktop\\Personal Project\\Chess3D\\assets\\scripts\\manager\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EA0B9687-B9B9-0970-9E25-0E1C02D78036}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\manager\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EA0B9687-B9B9-0970-9E25-0E1C02D78036}|Assembly-CSharp.csproj|C:\\Users\\HLC_2021\\Desktop\\Personal Project\\Chess3D\\assets\\scripts\\mouseaction.cs||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{EA0B9687-B9B9-0970-9E25-0E1C02D78036}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\mouseaction.cs||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{EA0B9687-B9B9-0970-9E25-0E1C02D78036}|Assembly-CSharp.csproj|C:\\Users\\HLC_2021\\Desktop\\Personal Project\\Chess3D\\assets\\scripts\\chessrules.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA0B9687-B9B9-0970-9E25-0E1C02D78036}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\chessrules.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EA0B9687-B9B9-0970-9E25-0E1C02D78036}|Assembly-CSharp.csproj|C:\\Users\\HLC_2021\\Desktop\\Personal Project\\Chess3D\\assets\\scripts\\pieces\\piecepawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EA0B9687-B9B9-0970-9E25-0E1C02D78036}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pieces\\piecepawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EA0B9687-B9B9-0970-9E25-0E1C02D78036}|Assembly-CSharp.csproj|C:\\Users\\HLC_2021\\Desktop\\Personal Project\\Chess3D\\assets\\scripts\\icommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA0B9687-B9B9-0970-9E25-0E1C02D78036}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\icommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EA0B9687-B9B9-0970-9E25-0E1C02D78036}|Assembly-CSharp.csproj|c:\\users\\hlc_2021\\desktop\\personal project\\chess3d\\assets\\scripts\\cameraswitcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA0B9687-B9B9-0970-9E25-0E1C02D78036}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cameraswitcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EA0B9687-B9B9-0970-9E25-0E1C02D78036}|Assembly-CSharp.csproj|C:\\Users\\HLC_2021\\Desktop\\Personal Project\\Chess3D\\assets\\scripts\\defines\\generaldefine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA0B9687-B9B9-0970-9E25-0E1C02D78036}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\defines\\generaldefine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EA0B9687-B9B9-0970-9E25-0E1C02D78036}|Assembly-CSharp.csproj|c:\\users\\hlc_2021\\desktop\\personal project\\chess3d\\assets\\scripts\\canvasuimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA0B9687-B9B9-0970-9E25-0E1C02D78036}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\canvasuimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA0B9687-B9B9-0970-9E25-0E1C02D78036}|Assembly-CSharp.csproj|c:\\users\\hlc_2021\\desktop\\personal project\\chess3d\\assets\\scripts\\turntimer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA0B9687-B9B9-0970-9E25-0E1C02D78036}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\turntimer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA0B9687-B9B9-0970-9E25-0E1C02D78036}|Assembly-CSharp.csproj|C:\\Users\\HLC_2021\\Desktop\\Personal Project\\Chess3D\\assets\\scripts\\pieces\\piecesui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA0B9687-B9B9-0970-9E25-0E1C02D78036}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pieces\\piecesui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA0B9687-B9B9-0970-9E25-0E1C02D78036}|Assembly-CSharp.csproj|C:\\Users\\HLC_2021\\Desktop\\Personal Project\\Chess3D\\assets\\scripts\\mouseaction.cs||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{EA0B9687-B9B9-0970-9E25-0E1C02D78036}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\mouseaction.cs||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,24 +50,76 @@
       "DocumentGroups": [
         {
           "DockedWidth": 239,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
+              "Title": "PlayerManager.cs",
+              "DocumentMoniker": "C:\\Users\\HLC_2021\\Desktop\\Personal Project\\Chess3D\\Assets\\Scripts\\Manager\\PlayerManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Manager\\PlayerManager.cs",
+              "ToolTip": "C:\\Users\\HLC_2021\\Desktop\\Personal Project\\Chess3D\\Assets\\Scripts\\Manager\\PlayerManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Manager\\PlayerManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-23T06:06:21.164Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CameraSwitcher.cs",
+              "DocumentMoniker": "C:\\Users\\HLC_2021\\Desktop\\Personal Project\\Chess3D\\Assets\\Scripts\\CameraSwitcher.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\CameraSwitcher.cs",
+              "ToolTip": "C:\\Users\\HLC_2021\\Desktop\\Personal Project\\Chess3D\\Assets\\Scripts\\CameraSwitcher.cs",
+              "RelativeToolTip": "Assets\\Scripts\\CameraSwitcher.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-23T04:46:22.967Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CanvasUIManager.cs",
+              "DocumentMoniker": "C:\\Users\\HLC_2021\\Desktop\\Personal Project\\Chess3D\\Assets\\Scripts\\CanvasUIManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\CanvasUIManager.cs",
+              "ToolTip": "C:\\Users\\HLC_2021\\Desktop\\Personal Project\\Chess3D\\Assets\\Scripts\\CanvasUIManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\CanvasUIManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-23T04:42:28.085Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TurnTimer.cs",
+              "DocumentMoniker": "C:\\Users\\HLC_2021\\Desktop\\Personal Project\\Chess3D\\Assets\\Scripts\\TurnTimer.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\TurnTimer.cs",
+              "ToolTip": "C:\\Users\\HLC_2021\\Desktop\\Personal Project\\Chess3D\\Assets\\Scripts\\TurnTimer.cs",
+              "RelativeToolTip": "Assets\\Scripts\\TurnTimer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAE0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-23T04:42:08.986Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "ChessRules.cs",
               "DocumentMoniker": "C:\\Users\\HLC_2021\\Desktop\\Personal Project\\Chess3D\\Assets\\Scripts\\ChessRules.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ChessRules.cs",
               "ToolTip": "C:\\Users\\HLC_2021\\Desktop\\Personal Project\\Chess3D\\Assets\\Scripts\\ChessRules.cs",
               "RelativeToolTip": "Assets\\Scripts\\ChessRules.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAgwK8AAABSAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-16T13:12:43.688Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 8,
               "Title": "PiecesUI.cs",
               "DocumentMoniker": "C:\\Users\\HLC_2021\\Desktop\\Personal Project\\Chess3D\\Assets\\Scripts\\Pieces\\PiecesUI.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Pieces\\PiecesUI.cs",
@@ -75,48 +127,24 @@
               "RelativeToolTip": "Assets\\Scripts\\Pieces\\PiecesUI.cs",
               "ViewState": "AQIAAB8AAAAAAAAAAAAgwB0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-16T07:57:33.866Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-16T07:57:33.866Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 4,
               "Title": "PiecePawn.cs",
               "DocumentMoniker": "C:\\Users\\HLC_2021\\Desktop\\Personal Project\\Chess3D\\Assets\\Scripts\\Pieces\\PiecePawn.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Pieces\\PiecePawn.cs",
               "ToolTip": "C:\\Users\\HLC_2021\\Desktop\\Personal Project\\Chess3D\\Assets\\Scripts\\Pieces\\PiecePawn.cs",
               "RelativeToolTip": "Assets\\Scripts\\Pieces\\PiecePawn.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAASwCIAAAAUAAAA",
+              "ViewState": "AQIAABUAAAAAAAAAAAASwCwAAABFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-16T07:34:17.798Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PlayerManager.cs",
-              "DocumentMoniker": "C:\\Users\\HLC_2021\\Desktop\\Personal Project\\Chess3D\\Assets\\Scripts\\Manager\\PlayerManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Manager\\PlayerManager.cs",
-              "ToolTip": "C:\\Users\\HLC_2021\\Desktop\\Personal Project\\Chess3D\\Assets\\Scripts\\Manager\\PlayerManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Manager\\PlayerManager.cs",
-              "ViewState": "AQIAACMAAAAAAAAAAAASwD8AAAAOAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-16T03:56:22.648Z"
+              "WhenOpened": "2025-08-16T07:34:17.798Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "GeneralDefine.cs",
-              "DocumentMoniker": "C:\\Users\\HLC_2021\\Desktop\\Personal Project\\Chess3D\\Assets\\Scripts\\Defines\\GeneralDefine.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Defines\\GeneralDefine.cs",
-              "ToolTip": "C:\\Users\\HLC_2021\\Desktop\\Personal Project\\Chess3D\\Assets\\Scripts\\Defines\\GeneralDefine.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Defines\\GeneralDefine.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAwwCQAAAALAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-15T17:23:49.333Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
               "Title": "MouseAction.cs",
               "DocumentMoniker": "C:\\Users\\HLC_2021\\Desktop\\Personal Project\\Chess3D\\Assets\\Scripts\\MouseAction.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\MouseAction.cs",
@@ -128,52 +156,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Plate.cs",
-              "DocumentMoniker": "C:\\Users\\HLC_2021\\Desktop\\Personal Project\\Chess3D\\Assets\\Scripts\\Plate\\Plate.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Plate\\Plate.cs",
-              "ToolTip": "C:\\Users\\HLC_2021\\Desktop\\Personal Project\\Chess3D\\Assets\\Scripts\\Plate\\Plate.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Plate\\Plate.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAAAFwAAAA7AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-15T15:17:27.513Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "IPieces.cs",
-              "DocumentMoniker": "C:\\Users\\HLC_2021\\Desktop\\Personal Project\\Chess3D\\Assets\\Scripts\\Pieces\\IPieces.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Pieces\\IPieces.cs",
-              "ToolTip": "C:\\Users\\HLC_2021\\Desktop\\Personal Project\\Chess3D\\Assets\\Scripts\\Pieces\\IPieces.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Pieces\\IPieces.cs",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAAwHEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-15T15:12:53.881Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
               "Title": "ICommand.cs",
               "DocumentMoniker": "C:\\Users\\HLC_2021\\Desktop\\Personal Project\\Chess3D\\Assets\\Scripts\\ICommand.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ICommand.cs",
               "ToolTip": "C:\\Users\\HLC_2021\\Desktop\\Personal Project\\Chess3D\\Assets\\Scripts\\ICommand.cs",
               "RelativeToolTip": "Assets\\Scripts\\ICommand.cs",
-              "ViewState": "AQIAACAAAAAAAAAAAAAcwBUAAAAAAAAA",
+              "ViewState": "AQIAACwAAAAAAAAAAAAcwEUAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-15T09:54:48.895Z"
+              "WhenOpened": "2025-08-15T09:54:48.895Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "GameManager.cs",
               "DocumentMoniker": "C:\\Users\\HLC_2021\\Desktop\\Personal Project\\Chess3D\\Assets\\Scripts\\Manager\\GameManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Manager\\GameManager.cs",
               "ToolTip": "C:\\Users\\HLC_2021\\Desktop\\Personal Project\\Chess3D\\Assets\\Scripts\\Manager\\GameManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\Manager\\GameManager.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAADgvzEAAAAFAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-15T07:47:49.671Z"
+              "WhenOpened": "2025-08-15T07:47:49.671Z",
+              "EditorCaption": ""
             }
           ]
         }

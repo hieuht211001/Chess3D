@@ -14,6 +14,7 @@ public class OtherDefine
         LEGAL,
         ILLEGAL,
         SPECIAL,
+        CAPTURE,
     }
 
     public class CastlePosPair

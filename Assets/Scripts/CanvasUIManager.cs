@@ -10,7 +10,6 @@ public class CanvasUIManager : MonoBehaviour
     private List<TurnTimer> turnTimerList;
     private TurnManager turnManager;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         InitTurnTimerPrefabs();
@@ -21,7 +20,6 @@ public class CanvasUIManager : MonoBehaviour
         this.turnManager = turnManager;
     }
 
-    // Update is called once per frame
     void Update()
     {
         foreach (TEAM_SIDE teamSide in Enum.GetValues(typeof(TEAM_SIDE)))

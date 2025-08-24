@@ -59,14 +59,20 @@ public class GameManager : MonoBehaviour
     private void OnPieceSelected(IPieces piece)
     {
         if (piece == null) return;
-        List<CoordXY> legalMoves = piece.GetPossibleMoves();
+        List<CoordXY> possibleMoves = piece.GetPossibleMoves();
+        List<CoordXY> legalMoves = new List<CoordXY>();
+        List<CoordXY> captureMoves = new List<CoordXY>();
         List<CoordXY> illegalMoves = new List<CoordXY>();
         List<CastlePosPair> castleMoves = new List<CastlePosPair>();
 
         player[(int)piece.teamSide].SetSelectPiece(piece);
 
-        (List<CoordXY> legalList, List<CoordXY> illegalList) temp = chessRules.FilterIllegalMoves(piece, legalMoves);
-        legalMoves = temp.legalList;
+        (List<CoordXY> legalList, List<CoordXY> illegalList) temp = chessRules.FilterIllegalMoves(piece, possibleMoves);
+        foreach (var move in temp.legalList)
+        {
+            if (boardLogic.IsAnyEnermyPiecesAt(move, piece.teamSide)) captureMoves.Add(move);
+            else legalMoves.Add(move);
+        }
         illegalMoves = temp.illegalList;
 
         if (piece.pieceType == PIECE_TYPE.KING)
@@ -82,6 +88,10 @@ public class GameManager : MonoBehaviour
         if (legalMoves != null && legalMoves.Count > 0)
         {
             plate.ShowPlateAt(PLATE_TYPE.LEGAL, legalMoves, piece.GetCurrentPosition());
+        }
+        if (captureMoves != null && captureMoves.Count > 0)
+        {
+            plate.ShowPlateAt(PLATE_TYPE.CAPTURE, captureMoves, piece.GetCurrentPosition());
         }
         if (illegalMoves != null && illegalMoves.Count > 0)
         {
@@ -154,7 +164,8 @@ public class GameManager : MonoBehaviour
             Plate selectedPlate = ((IPieces)component).GetTriggeredPlate();
             if (selectedPlate != null 
                 && selectedPlate.GetPlateType() != PLATE_TYPE.ILLEGAL 
-                && !selectedPlate.GetPos().IsEqual(((IPieces)component).GetCurrentPosition())) OnMovePlateSelected(selectedPlate);
+                && !selectedPlate.GetPos().IsEqual(((IPieces)component).GetCurrentPosition())) 
+                OnMovePlateSelected(selectedPlate);
             else dragPieceCmd.Undo();
         }
     }

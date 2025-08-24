@@ -22,8 +22,6 @@ public class CameraSwitcher : MonoBehaviour
             cameras[i].gameObject.SetActive(i == 0);
         }
         currentCameraIndex = 0;
-        SwitchCamera();
-        SwitchCamera();
     }
 
     public void SwitchCamera()

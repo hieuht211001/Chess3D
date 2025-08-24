@@ -75,7 +75,6 @@ public class TurnTimer : MonoBehaviour
 
     private void OnTimerEnd()
     {
-        Debug.Log("Timer finished!");
     }
 
     private void SetUI()
