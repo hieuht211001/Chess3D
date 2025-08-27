@@ -34,11 +34,12 @@ public class Plate : MonoBehaviour
         position = new CoordXY();
     }
 
-    public Plate(PlateUI plateUI)
+    public void AssignRefInstance(PlateUI plateUI)
     {
         this.plateUi = plateUI;
         position = new CoordXY();
     }
+
     public CoordXY GetPos() => position;
     public PLATE_TYPE GetPlateType() => plateType;
     public Plate GetPlateInAssignedPos(CoordXY pos)
@@ -86,7 +87,7 @@ public class Plate : MonoBehaviour
             rb.collisionDetectionMode = CollisionDetectionMode.ContinuousDynamic;
 
             MouseAction mouseAction = gameObject.AddComponent<MouseAction>();
-            GameManager gm = GameManager.Instance;
+            IPlayerController gm = GameManager.Instance.playerController[(int)TEAM_SIDE.ALLY];
             mouseAction.OnClick += gm.OnClickEvent;
             mouseAction.OnHoldStart += gm.OnHoldStartEvent;
             mouseAction.OnHoldDrag += gm.OnHoldDragEvent;

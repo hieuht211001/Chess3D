@@ -10,13 +10,13 @@ public class BoardLogic : MonoBehaviour
 {
     public static float SCALE_X = 0F;
     public static float SCALE_Y = 0F;
-    private PlayerManager[] player;
+    private Player[] player;
     void Awake()
     {
         CalculateCoordRate();
     }
 
-    public void AssignRefInstance(PlayerManager[] player)
+    public void AssignRefInstance(Player[] player)
     {
         this.player = player;
     }
@@ -51,22 +51,8 @@ public class BoardLogic : MonoBehaviour
         foreach (var piece in pieces)
         {
             if (piece.GetCurrentPosition().x == coord.x
-                && piece.GetCurrentPosition().y == coord.y) return piece;
+                && piece.GetCurrentPosition().y == coord.y && piece.isActive) return piece;
         }
-        return null;
-        //Vector3 rayOrigin = new Vector3(Util.ConvertCoordToWorldVector(coord).x, 0, Util.ConvertCoordToWorldVector(coord).y);
-        //Ray ray = new Ray(rayOrigin, Vector3.up);
-        //RaycastHit hit;
-
-        //if (Physics.Raycast(ray, out hit, 20f))
-        //{
-        //    if (hit.collider.CompareTag(TAG.PIECES.ToString()))
-        //    {
-        //        GameObject hitObject = hit.collider.gameObject;
-        //        IPieces pieceComp = hitObject.GetComponent<IPieces>();
-        //        return hitObject.GetComponent<IPieces>();
-        //    }
-        //}
         return null;
     }
 
@@ -92,17 +78,8 @@ public class BoardLogic : MonoBehaviour
         foreach(var piece in pieces)
         {
             if (piece.GetCurrentPosition().x == coord.x
-                && piece.GetCurrentPosition().y == coord.y) return true;
+                && piece.GetCurrentPosition().y == coord.y && piece.isActive) return true;
         }
         return false;
-        //Vector3 rayOrigin = new Vector3(Util.ConvertCoordToWorldVector(coord).x, 0, Util.ConvertCoordToWorldVector(coord).y);
-        //Ray ray = new Ray(rayOrigin, Vector3.up);
-        //RaycastHit hit;
-
-        //if (Physics.Raycast(ray, out hit, 20f))
-        //{
-        //    if (hit.collider.CompareTag(TAG.PIECES.ToString())) return true;
-        //}
-        //return false;
     }
 }

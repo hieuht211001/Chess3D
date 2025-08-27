@@ -20,10 +20,12 @@ public abstract class IPieces : MonoBehaviour
     private MeshCollider meshCollider;
     private BoxCollider triggerCollider;
     private Rigidbody rb;
+    private MouseAction mouseAction;
     private Plate triggeredPlate;
     private Vector3 finalPos;
-    public bool isSelected;
-    public bool hasMoved;
+    public bool isSelected { get; private set; }
+    public bool isActive { get; private set; }
+    public bool hasMoved { get; private set; }
     [SerializeField] public PiecesUI pieceObjectRef;
     #endregion
 
@@ -34,12 +36,13 @@ public abstract class IPieces : MonoBehaviour
         this.teamSide = teamSide;
         this.pieceType = pieceType;
         this.currentPos = position;
-        this.isSelected = true;
-        ForceSetPiecePos(this.currentPos);
+        SetPieceDropFrom(this.currentPos);
         this.tag = TAG.PIECES.ToString();
         this.gameObject.layer = LayerMask.NameToLayer(LAYER.PIECES.ToString());
         SetUpColliderNRigidBody();
         SetMaterial(1f);
+        DeSelectPiece();
+        ActivePiece();
     }
 
     private void SetUpColliderNRigidBody()
@@ -58,12 +61,7 @@ public abstract class IPieces : MonoBehaviour
         triggerCollider.size = new Vector3(0.4f, 1.34f, 0.4f);
         triggerCollider.isTrigger = true;
 
-        MouseAction mouseAction = gameObject.AddComponent<MouseAction>();
-        GameManager gm = GameManager.Instance;
-        mouseAction.OnClick += gm.OnClickEvent;
-        mouseAction.OnHoldStart += gm.OnHoldStartEvent;
-        mouseAction.OnHoldDrag += gm.OnHoldDragEvent;
-        mouseAction.OnHoldEnd += gm.OnHoldEndEvent;
+        mouseAction = gameObject.AddComponent<MouseAction>();;
     }
 
     public void AssignRefIntance(BoardLogic boardLogic)
@@ -101,13 +99,8 @@ public abstract class IPieces : MonoBehaviour
 
     void LateUpdate()
     {
-        if (transform.position.y == 0f)
-        {
-            SetKinematic(false);
-        }
-        else SetKinematic(true);
-
-        if (finalPos != Vector3.zero && !transform.position.Equals(finalPos))
+        UpdateKinematic();
+        if (!transform.position.Equals(finalPos))
         {
             transform.position = finalPos;
         }
@@ -115,13 +108,14 @@ public abstract class IPieces : MonoBehaviour
     #endregion
 
     #region MOTION_RELATED_FUNCTION
+
+    #region FORCE_MOTION
     public void ForceSimulatePieceCoord(CoordXY pos) => this.currentPos = pos;
     public void ForceSetPiecePos(CoordXY pos)
     {
         Vector2 vector = Util.ConvertCoordToWorldVector(pos);
-        SetPosition(new Vector3(vector.x, 0f, vector.y));
+        SetPosition(new Vector3(vector.x, transform.position.y, vector.y));
     }
-
     public void ForceSetPiecePos(Vector2 pos)
     {
         SetPosition(new Vector3(pos.x, transform.position.y, pos.y));
@@ -130,14 +124,21 @@ public abstract class IPieces : MonoBehaviour
     {
         SetPosition(new Vector3(transform.position.x, liftHeight, transform.position.z));
     }
-
     private void SetPosition(Vector3 pos) => finalPos = pos;
+    #endregion
 
-    public void MoveToCaptureQueue()
+    #region PIECE_MOTION_FUNCTION
+    public void SetPieceDropFrom(CoordXY pos)
     {
-
+        Vector2 vector = Util.ConvertCoordToWorldVector(pos);
+        DropPiece(new Vector3(vector.x, OtherDefine.PIECE_DROP_HEIGHT, vector.y));
     }
 
+    public void MoveToCaptureQueue(Vector2 captureQueuePos)
+    {
+        DeActivePiece();
+        DropPiece(new Vector3(captureQueuePos.x, OtherDefine.PIECE_DROP_HEIGHT, captureQueuePos.y), OtherDefine.CAPTURE_QUEUE_HEIGHT);
+    }
 
     public void MoveToWithLift(CoordXY pos)
     {
@@ -145,6 +146,28 @@ public abstract class IPieces : MonoBehaviour
         this.currentPos = pos;
         Vector2 vectorPos = Util.ConvertCoordToWorldVector(pos);
         StartCoroutine(MoveRoutine(new Vector3(vectorPos.x, 0, vectorPos.y)));
+    }
+    #endregion
+
+    #region MOTION_ANIMATION
+    private void DropPiece(Vector3 startPos, float dropPos = 0f)
+    {
+        StartCoroutine(DropRoutine(startPos, dropPos));
+    }
+
+    IEnumerator DropRoutine(Vector3 startPos, float dropPos)
+    {
+        Vector3 dropStartPos = startPos;
+        Vector3 liftedPos = new Vector3(dropStartPos.x, dropPos, dropStartPos.z);
+
+        float timer = 0f;
+        while (timer < PIECE_LIFT_DURATION)
+        {
+            SetPosition(Vector3.Lerp(dropStartPos, liftedPos, timer / PIECE_LIFT_DURATION));
+            timer += Time.deltaTime;
+            yield return null;
+        }
+        SetPosition(liftedPos);
     }
 
     private IEnumerator MoveRoutine(Vector3 targetPos)
@@ -183,6 +206,7 @@ public abstract class IPieces : MonoBehaviour
         }
         SetPosition(targetPos);
     }
+    #endregion
     #endregion
 
     #region GET_DATA_FUNCTION
@@ -225,10 +249,35 @@ public abstract class IPieces : MonoBehaviour
     {
         return (IsCoordValid(pos) && boardGrid.IsAnyEnermyPiecesAt(pos, teamSide));
     }
+    #endregion
 
-    public void SetKinematic(bool bOption)
+    #region SET_DATA_FUNCTION
+    public void ActivePiece()
     {
-        rb.isKinematic = bOption;
+        this.isActive = true;
+        IPlayerController gm = GameManager.Instance.playerController[(int)this.teamSide];
+        mouseAction.OnClick += gm.OnClickEvent;
+        mouseAction.OnHoldStart += gm.OnHoldStartEvent;
+        mouseAction.OnHoldDrag += gm.OnHoldDragEvent;
+        mouseAction.OnHoldEnd += gm.OnHoldEndEvent;
+    }
+
+    public void DeActivePiece()
+    {
+        this.isActive = false;
+        IPlayerController gm = GameManager.Instance.playerController[(int)this.teamSide];
+        mouseAction.OnClick -= gm.OnClickEvent;
+        mouseAction.OnHoldStart -= gm.OnHoldStartEvent;
+        mouseAction.OnHoldDrag -= gm.OnHoldDragEvent;
+        mouseAction.OnHoldEnd -= gm.OnHoldEndEvent;
+    }
+
+    public void SelectPiece() => this.isSelected = true;
+    public void DeSelectPiece() => this.isSelected = false;
+    public void UpdateKinematic()
+    {
+        if (rb.IsSleeping()) rb.isKinematic = false;
+        else rb.isKinematic = true;
     }
 
     public void SetMaterial(float alpha = 1f)

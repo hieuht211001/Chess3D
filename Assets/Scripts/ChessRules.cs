@@ -12,9 +12,9 @@ using static PiecesDefine;
 
 public class ChessRules
 {
-    private PlayerManager[] playerManager;
+    private Player[] playerManager;
     private BoardLogic boardLogic;
-    public ChessRules(BoardLogic boardLogic, PlayerManager[] playerManagers)
+    public ChessRules(BoardLogic boardLogic, Player[] playerManagers)
     {
         this.playerManager = playerManagers;
         this.boardLogic = boardLogic;
@@ -179,7 +179,7 @@ public class ChessRules
         List<CoordXY> illegal = new List<CoordXY>();
         for (int i = posList.Count - 1; i >= 0; i--)
         {
-            SimulateCommand simulateMovement = new SimulateCommand(piece, posList[i]);
+            SimulateCommand simulateMovement = new SimulateCommand(boardLogic, piece, posList[i]);
             simulateMovement.Execute();
             if (IsKingInCheck(teamSide))
             {

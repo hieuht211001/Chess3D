@@ -48,24 +48,35 @@ public class MoveCommand : ICommand
     private IPieces capturedPiece;
     private CoordXY originCoord, destCoord;
     private BoardLogic boardGrid;
-    public MoveCommand(BoardLogic board, IPieces targetPiece, CoordXY destCoord)
+    private CaptureQueue captureQueue;
+    private Vector2 captureLinePos;
+    public MoveCommand(BoardLogic board, IPieces targetPiece, CoordXY destCoord, CaptureQueue captureQueue)
     {
         this.boardGrid = board;
         this.targetPiece = targetPiece;
         this.originCoord = targetPiece.GetCurrentPosition();
         this.destCoord = destCoord;
+        this.captureQueue = captureQueue;
     }
 
     public void Execute()
     {
         capturedPiece = boardGrid.GetPieceAt(this.destCoord);
-        if (capturedPiece != null) capturedPiece.MoveToCaptureQueue();
         targetPiece.MoveToWithLift(destCoord);
+        if (capturedPiece != null)
+        {
+            captureLinePos = captureQueue.AddNewCaptureLine(targetPiece.teamSide);
+            capturedPiece.MoveToCaptureQueue(captureLinePos);
+        }
     }
 
     public void Undo()
     {
         targetPiece.MoveToWithLift(originCoord);
+        if (capturedPiece != null)
+        {
+
+        }
     }
 }
 
@@ -104,21 +115,33 @@ public class SimulateCommand : ICommand
 {
     private IPieces targetPiece;
     private CoordXY originCoord, destCoord;
-    public SimulateCommand(IPieces targetPiece, CoordXY destCoord)
+    private IPieces capturedPiece;
+    private BoardLogic boardGrid;
+    public SimulateCommand(BoardLogic board, IPieces targetPiece, CoordXY destCoord)
     {
         this.targetPiece = targetPiece;
         this.originCoord = targetPiece.GetCurrentPosition();
         this.destCoord = destCoord;
+        this.boardGrid = board;
     }
 
     public void Execute()
     {
+        capturedPiece = boardGrid.GetPieceAt(this.destCoord);
         targetPiece.ForceSimulatePieceCoord(destCoord);
+        if (capturedPiece != null)
+        {
+            capturedPiece.DeActivePiece();
+        }
     }
 
     public void Undo()
     {
         targetPiece.ForceSimulatePieceCoord(originCoord);
+        if (capturedPiece != null)
+        {
+            capturedPiece.ActivePiece();
+        }
     }
 }
 

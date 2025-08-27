@@ -62,4 +62,11 @@ public class GeneralDefine
         PIECES,
         MOVE_PLATE
     }
+
+    public enum PLAYER_MODE
+    {
+        HUMAN,
+        AI,
+        NETWORK,
+    }
 }
