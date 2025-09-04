@@ -7,16 +7,24 @@
       "RelativeMoniker": "D:0:0:{04E25211-54EB-17E5-4CF6-0EB741F4CC3B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\aiplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{04E25211-54EB-17E5-4CF6-0EB741F4CC3B}|Assembly-CSharp.csproj|D:\\Unity\\Chess 3D\\assets\\scripts\\manager\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04E25211-54EB-17E5-4CF6-0EB741F4CC3B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\manager\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04E25211-54EB-17E5-4CF6-0EB741F4CC3B}|Assembly-CSharp.csproj|D:\\Unity\\Chess 3D\\assets\\scripts\\manager\\canvasuimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04E25211-54EB-17E5-4CF6-0EB741F4CC3B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\manager\\canvasuimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04E25211-54EB-17E5-4CF6-0EB741F4CC3B}|Assembly-CSharp.csproj|d:\\unity\\chess 3d\\assets\\scripts\\manager\\turnmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04E25211-54EB-17E5-4CF6-0EB741F4CC3B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\manager\\turnmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{04E25211-54EB-17E5-4CF6-0EB741F4CC3B}|Assembly-CSharp.csproj|D:\\Unity\\Chess 3D\\assets\\scripts\\pieces\\pieceking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{04E25211-54EB-17E5-4CF6-0EB741F4CC3B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pieces\\pieceking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EA0B9687-B9B9-0970-9E25-0E1C02D78036}|Assembly-CSharp.csproj|D:\\Unity\\Chess 3D\\assets\\scripts\\pieces\\pieceking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EA0B9687-B9B9-0970-9E25-0E1C02D78036}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pieces\\pieceking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{04E25211-54EB-17E5-4CF6-0EB741F4CC3B}|Assembly-CSharp.csproj|d:\\unity\\chess 3d\\assets\\scripts\\manager\\turnmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{04E25211-54EB-17E5-4CF6-0EB741F4CC3B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\manager\\turnmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{04E25211-54EB-17E5-4CF6-0EB741F4CC3B}|Assembly-CSharp.csproj|d:\\unity\\chess 3d\\assets\\scripts\\util.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -33,10 +41,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{04E25211-54EB-17E5-4CF6-0EB741F4CC3B}|Assembly-CSharp.csproj|D:\\Unity\\Chess 3D\\assets\\scripts\\chessai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{04E25211-54EB-17E5-4CF6-0EB741F4CC3B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\chessai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{04E25211-54EB-17E5-4CF6-0EB741F4CC3B}|Assembly-CSharp.csproj|D:\\Unity\\Chess 3D\\assets\\scripts\\manager\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{04E25211-54EB-17E5-4CF6-0EB741F4CC3B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\manager\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{04E25211-54EB-17E5-4CF6-0EB741F4CC3B}|Assembly-CSharp.csproj|D:\\Unity\\Chess 3D\\assets\\scripts\\humanplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -67,10 +71,6 @@
       "RelativeMoniker": "D:0:0:{04E25211-54EB-17E5-4CF6-0EB741F4CC3B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cameraswitcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{04E25211-54EB-17E5-4CF6-0EB741F4CC3B}|Assembly-CSharp.csproj|D:\\Unity\\Chess 3D\\assets\\scripts\\manager\\canvasuimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{04E25211-54EB-17E5-4CF6-0EB741F4CC3B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\manager\\canvasuimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{04E25211-54EB-17E5-4CF6-0EB741F4CC3B}|Assembly-CSharp.csproj|D:\\Unity\\Chess 3D\\assets\\scripts\\capturequeue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{04E25211-54EB-17E5-4CF6-0EB741F4CC3B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\capturequeue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -89,10 +89,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{EA0B9687-B9B9-0970-9E25-0E1C02D78036}|Assembly-CSharp.csproj|D:\\Unity\\Chess 3D\\assets\\scripts\\board\\boardlogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EA0B9687-B9B9-0970-9E25-0E1C02D78036}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\board\\boardlogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{04E25211-54EB-17E5-4CF6-0EB741F4CC3B}|Assembly-CSharp.csproj|D:\\Unity\\Chess 3D\\assets\\scripts\\turntimer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{04E25211-54EB-17E5-4CF6-0EB741F4CC3B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\turntimer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{04E25211-54EB-17E5-4CF6-0EB741F4CC3B}|Assembly-CSharp.csproj|D:\\Unity\\Chess 3D\\assets\\scripts\\progressbarshrink.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -132,22 +128,9 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 785,
-          "SelectedChildIndex": 2,
+          "DockedWidth": 646,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Util.cs",
-              "DocumentMoniker": "D:\\Unity\\Chess 3D\\Assets\\Scripts\\Util.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Util.cs",
-              "ToolTip": "D:\\Unity\\Chess 3D\\Assets\\Scripts\\Util.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Util.cs",
-              "ViewState": "AgIAADkAAAAAAAAAAAAqwEAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-27T16:21:43.754Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 3,
@@ -169,14 +152,14 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\AIPlayer.cs",
               "ToolTip": "D:\\Unity\\Chess 3D\\Assets\\Scripts\\AIPlayer.cs",
               "RelativeToolTip": "Assets\\Scripts\\AIPlayer.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAA+AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-27T15:28:11.793Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "PieceKing.cs",
               "DocumentMoniker": "D:\\Unity\\Chess 3D\\Assets\\Scripts\\Pieces\\PieceKing.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Pieces\\PieceKing.cs",
@@ -188,7 +171,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "PieceBishop.cs",
               "DocumentMoniker": "D:\\Unity\\Chess 3D\\Assets\\Scripts\\Pieces\\PieceBishop.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Pieces\\PieceBishop.cs",
@@ -200,20 +183,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 1,
               "Title": "GameManager.cs",
               "DocumentMoniker": "D:\\Unity\\Chess 3D\\Assets\\Scripts\\Manager\\GameManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Manager\\GameManager.cs",
               "ToolTip": "D:\\Unity\\Chess 3D\\Assets\\Scripts\\Manager\\GameManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\Manager\\GameManager.cs",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAswEkAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAC0AAAAAAAAAAAD4vxYAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-18T13:15:10.141Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 6,
+              "Title": "Util.cs",
+              "DocumentMoniker": "D:\\Unity\\Chess 3D\\Assets\\Scripts\\Util.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Util.cs",
+              "ToolTip": "D:\\Unity\\Chess 3D\\Assets\\Scripts\\Util.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Util.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAqwEAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T16:21:43.754Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "PieceBishop.cs",
               "DocumentMoniker": "D:\\Unity\\Chess 3D\\Assets\\Scripts\\Pieces\\PieceBishop.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Pieces\\PieceBishop.cs",
@@ -225,7 +221,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "PieceKing.cs",
               "DocumentMoniker": "D:\\Unity\\Chess 3D\\Assets\\Scripts\\Pieces\\PieceKing.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Pieces\\PieceKing.cs",
@@ -238,7 +234,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Player.cs",
               "DocumentMoniker": "D:\\Unity\\Chess 3D\\Assets\\Scripts\\Manager\\Player.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Manager\\Player.cs",
@@ -251,7 +247,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "ChessRules.cs",
               "DocumentMoniker": "D:\\Unity\\Chess 3D\\Assets\\Scripts\\ChessRules.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ChessRules.cs",
@@ -275,7 +271,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "CameraSwitcher.cs",
               "DocumentMoniker": "D:\\Unity\\Chess 3D\\Assets\\Scripts\\CameraSwitcher.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CameraSwitcher.cs",
@@ -311,7 +307,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 22,
               "Title": "ProgressBarShrink.cs",
               "DocumentMoniker": "D:\\Unity\\Chess 3D\\Assets\\Scripts\\ProgressBarShrink.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ProgressBarShrink.cs",
@@ -323,19 +319,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "TurnTimer.cs",
-              "DocumentMoniker": "D:\\Unity\\Chess 3D\\Assets\\Scripts\\TurnTimer.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\TurnTimer.cs",
-              "ToolTip": "D:\\Unity\\Chess 3D\\Assets\\Scripts\\TurnTimer.cs",
-              "RelativeToolTip": "Assets\\Scripts\\TurnTimer.cs",
-              "ViewState": "AgIAAEwAAAAAAAAAAAAcwF4AAABeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-20T15:22:34.278Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 25,
               "Title": "PiecesUI.cs",
               "DocumentMoniker": "D:\\Unity\\Chess 3D\\Assets\\Scripts\\Pieces\\PiecesUI.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Pieces\\PiecesUI.cs",
@@ -347,7 +331,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 27,
               "Title": "PlateUI.cs",
               "DocumentMoniker": "C:\\Users\\HLC_2021\\Desktop\\Personal Project\\Chess3D\\Assets\\Scripts\\PlateUI.cs",
               "ToolTip": "C:\\Users\\HLC_2021\\Desktop\\Personal Project\\Chess3D\\Assets\\Scripts\\PlateUI.cs",
@@ -356,7 +340,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 28,
               "Title": "BoardUI.cs",
               "DocumentMoniker": "D:\\Unity\\Chess 3D\\Assets\\Scripts\\Board\\BoardUI.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Board\\BoardUI.cs",
@@ -368,7 +352,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 23,
               "Title": "PiecePawn.cs",
               "DocumentMoniker": "D:\\Unity\\Chess 3D\\Assets\\Scripts\\Pieces\\PiecePawn.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Pieces\\PiecePawn.cs",
@@ -380,7 +364,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 24,
               "Title": "PiecePawn.cs",
               "DocumentMoniker": "D:\\Unity\\Chess 3D\\Assets\\Scripts\\Pieces\\PiecePawn.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Pieces\\PiecePawn.cs",
@@ -392,7 +376,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 26,
               "Title": "GameManager.cs",
               "DocumentMoniker": "D:\\Unity\\Chess 3D\\Assets\\Scripts\\Manager\\GameManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Manager\\GameManager.cs",
@@ -404,7 +388,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 29,
               "Title": "PieceQueen.cs",
               "DocumentMoniker": "D:\\Unity\\Chess 3D\\Assets\\Scripts\\Pieces\\PieceQueen.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Pieces\\PieceQueen.cs",
@@ -417,30 +401,18 @@
           ]
         },
         {
-          "DockedWidth": 267,
-          "SelectedChildIndex": 1,
+          "DockedWidth": 406,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Plate.cs",
-              "DocumentMoniker": "D:\\Unity\\Chess 3D\\Assets\\Scripts\\Plate\\Plate.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Plate\\Plate.cs",
-              "ToolTip": "D:\\Unity\\Chess 3D\\Assets\\Scripts\\Plate\\Plate.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Plate\\Plate.cs",
-              "ViewState": "AgIAAE4AAAAAAAAAAAAIwFkAAABcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-27T14:55:39.214Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "IPlayer.cs",
               "DocumentMoniker": "D:\\Unity\\Chess 3D\\Assets\\Scripts\\IPlayer.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\IPlayer.cs",
               "ToolTip": "D:\\Unity\\Chess 3D\\Assets\\Scripts\\IPlayer.cs",
               "RelativeToolTip": "Assets\\Scripts\\IPlayer.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAApwCYAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAIAywCYAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-27T14:12:37.684Z",
               "EditorCaption": ""
@@ -448,19 +420,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "HumanPlayer.cs",
-              "DocumentMoniker": "D:\\Unity\\Chess 3D\\Assets\\Scripts\\HumanPlayer.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\HumanPlayer.cs",
-              "ToolTip": "D:\\Unity\\Chess 3D\\Assets\\Scripts\\HumanPlayer.cs",
-              "RelativeToolTip": "Assets\\Scripts\\HumanPlayer.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAAAAgAAABDAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-27T15:24:58.125Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
               "Title": "ChessAI.cs",
               "DocumentMoniker": "D:\\Unity\\Chess 3D\\Assets\\Scripts\\ChessAI.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ChessAI.cs",
@@ -473,7 +432,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "ICommand.cs",
               "DocumentMoniker": "D:\\Unity\\Chess 3D\\Assets\\Scripts\\ICommand.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ICommand.cs",
@@ -482,6 +441,44 @@
               "ViewState": "AgIAAHwAAAAAAAAAAAAIwI4AAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-26T15:14:12.547Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CanvasUIManager.cs",
+              "DocumentMoniker": "D:\\Unity\\Chess 3D\\Assets\\Scripts\\Manager\\CanvasUIManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Manager\\CanvasUIManager.cs",
+              "ToolTip": "D:\\Unity\\Chess 3D\\Assets\\Scripts\\Manager\\CanvasUIManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Manager\\CanvasUIManager.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAADwvykAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T13:59:24.161Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "HumanPlayer.cs",
+              "DocumentMoniker": "D:\\Unity\\Chess 3D\\Assets\\Scripts\\HumanPlayer.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\HumanPlayer.cs",
+              "ToolTip": "D:\\Unity\\Chess 3D\\Assets\\Scripts\\HumanPlayer.cs",
+              "RelativeToolTip": "Assets\\Scripts\\HumanPlayer.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAAAgAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T15:24:58.125Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Plate.cs",
+              "DocumentMoniker": "D:\\Unity\\Chess 3D\\Assets\\Scripts\\Plate\\Plate.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Plate\\Plate.cs",
+              "ToolTip": "D:\\Unity\\Chess 3D\\Assets\\Scripts\\Plate\\Plate.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Plate\\Plate.cs",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAIwFkAAABcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T14:55:39.214Z"
             },
             {
               "$type": "Document",
@@ -494,18 +491,6 @@
               "ViewState": "AgIAAFEAAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-25T13:20:38.796Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "CanvasUIManager.cs",
-              "DocumentMoniker": "D:\\Unity\\Chess 3D\\Assets\\Scripts\\Manager\\CanvasUIManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Manager\\CanvasUIManager.cs",
-              "ToolTip": "D:\\Unity\\Chess 3D\\Assets\\Scripts\\Manager\\CanvasUIManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Manager\\CanvasUIManager.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABoAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-25T13:59:24.161Z"
             },
             {
               "$type": "Document",
